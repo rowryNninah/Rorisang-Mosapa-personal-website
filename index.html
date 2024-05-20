@@ -20,8 +20,15 @@
         <div id="nav-bar" class="nav-bar">
           <ul id="nav-list" class="nav-bar">
             <li><a href="#">Home</a></li>
-            <li><a href="">Contacts</a></li>
-            <li><a href="">Portfolio</a></li>
+            <li class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Contacts</button>
+              <div id="dropdown" class="dropdown-contents">
+                <a>Call: 0626582275</a>
+                <a href="ttps://github.com/rowryNninah">GitHub</a>
+                <a href="">Whatsapp</a>
+              </div>
+            </li>
+            <li><a href="#">Portfolio</a></li>
           </ul>
         </div>
       </nav>
@@ -51,5 +58,24 @@
     <!-- <footer>
       <p>line goes here</p>
     </footer> -->
+    <script>
+      function myFunction() {
+        document.getElementById("dropdown").classList.toggle("show");
+      }
+
+      //to show the hidden char
+
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          let dropdowns = document.getElementsByClassName("dropdown-contents");
+          for (let a = 0; a < dropdowns.length; a++) {
+            let openDropdown = dropdowns[a];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
   </body>
 </html>
