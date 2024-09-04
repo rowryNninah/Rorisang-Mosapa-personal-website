@@ -87,6 +87,8 @@ nav {
 .hamburger-menu{
   display: none;
   cursor: pointer;
+  position: relative;
+  margin-left: 10px;
 }
 
 .burger-lines{
@@ -396,10 +398,11 @@ aside{
 
   .hamburger-menu {
     display: block;
+    margin-right: 10px;
   }
 
   .hamburger-menu.active .burger-lines:nth-child(1) {
-    transform: rotate(45deg) translate(12px, 12px);
+    transform: rotate(45deg) translate(5px, 5px);
   }
 
   .hamburger-menu.active .burger-lines:nth-child(2) {
@@ -407,10 +410,10 @@ aside{
   }
 
   .hamburger-menu.active .burger-lines:nth-child(3) {
-    transform: rotate(-45deg) translate(12px, -12px);
+    transform: rotate(-45deg) translate(5px, -5px);
   }
 
-  .nav-list {
+  #nav-list {
     position: fixed;
     left: -100%;
     top: 70px;
@@ -421,22 +424,28 @@ aside{
     text-align: center;
     transition: 0.3s;
   }
+  #nav-list li {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  #nav-list li a {
+    font-size: 14px;
+  }
 
   .nav-item {
     margin: 16px 0;
   }
 
-  .nav-list.active {
+  #nav-list.active {
     left: 0;
   }
 
-  /* .left{
-    grid-column: 2;
+ 
+  .about-btn .cv {
+    font-size: 16px; 
+    padding: 10px 15px; 
   }
-
-  aside{
-    grid-column: 1;
-  } */
 }
 
 
