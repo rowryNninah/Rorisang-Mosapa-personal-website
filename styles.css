@@ -262,7 +262,7 @@ aside {
 /* Styles for the contacts */
 
 .main-contacts {
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -285,7 +285,7 @@ aside {
 }
 
 .container .contact-info .box {
-  position: relative;
+  /* position: relative; */
   padding: 20px 0;
   display: flex;
 }
